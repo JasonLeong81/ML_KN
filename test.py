@@ -7,3 +7,10 @@ def WriteInFile():
             f.write('\n')
 # WriteInFile()
 
+def test_1():
+    pass
+test_1()
+
+def test_2():
+    pass
+test_2()
