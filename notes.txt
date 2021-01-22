@@ -31,6 +31,9 @@ Video 10:
 
 
 Video 11: Seaborn
+Univariate analysis (one feature)
+Bivariate analysis (two features)
+more than 2 features (use seaborn)
 
 
 Video 12: 
@@ -39,10 +42,12 @@ Video 12:
 Video 13: 
 
 
-Video 14: 
+Video 14: How to become good in exploratory data analysis (EDA)
 
 
-Video 15: 
+Video 15: EDA of Titanic dataset
+nominal -> not ordered
+ordinal -> ordered
 
 
 Video 16: 
