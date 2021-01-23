@@ -32,9 +32,29 @@ import pyforest # lazy imports
 # print(df.head())
 # print(active_imports())
 
+# try:
+#     print(1/0)
+# except ZeroDivisionError:
+#     print(ZeroDivisionError)
+# except Exception as e:
+#     print(e)
+# else:
+#     print('All Good')
+# finally:
+#     print('End')
 
-
-
+class Error(Exception):
+    pass
+class Empty(Error):
+    pass
+xx = input('Enter a number: ')
+try:
+    if xx:
+        print(xx)
+    else:
+        raise Empty
+except Empty:
+    print('Error')
 
 
 
