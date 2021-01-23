@@ -43,22 +43,50 @@ import pyforest # lazy imports
 # finally:
 #     print('End')
 
-class Error(Exception):
-    pass
-class Empty(Error):
-    pass
-xx = input('Enter a number: ')
-try:
-    if xx:
-        print(xx)
-    else:
-        raise Empty
-except Empty:
-    print('Error')
+# class Error(Exception):
+#     pass
+# class Empty(Error):
+#     pass
+# xx = input('Enter a number: ')
+# try:
+#     if xx:
+#         print(xx)
+#     else:
+#         raise Empty
+# except Empty:
+#     print('Error')
 
-
-
-
+### Public, Private, and Protected...all are not restricted in python, just a reminder for experienced developers ######################3
+class Car(): # all class variables are protected (only can be overwritten from subclasses)
+    def __init__(self,a,b,c):
+        self._a = a
+        self._b = b
+        self._c = c
+v = Car(1,2,3)
+# print(dir(v)) # look at the last three elements
+# print(v._b)
+# v._b = 1
+# print(v._b)
+class Car(): # all class variables are public
+    def __init__(self,a,b,c):
+        self.a = a
+        self.b = b
+        self.c = c
+vv = Car(1,2,3)
+# print(dir(vv)) # look at the last three elements
+# print(vv.b)
+# vv.b = 1
+# print(vv.b)
+class Car(): # all class variables are private (cannot be accessed from anywhere)
+    def __init__(self,a,b,c):
+        self.__a = a
+        self.__b = b
+        self.__c = c
+vvv = Car(1, 2, 3)
+# print(dir(vvv)) # look at the last three elements
+# print(vvv.__b)
+# vvv.__b = 1
+# print(vvv.__b)
 
 
 
