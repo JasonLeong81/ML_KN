@@ -61,8 +61,23 @@ train = pd.concat([train,sex,embarked],axis=1)
 # print(train.head())
 
 ########## Build a logistic regression model ##############################
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(train.drop('Survived',axis=1),train['Survived'],test_size=0.3,
+                                                 random_state=101)
+# shuffling the data prevents biases, https://www.youtube.com/watch?v=5SNSmnPXODM
+from sklearn.linear_model import LogisticRegression
+logmodel = LogisticRegression()
+logmodel.fit(x_train,y_train) # The point of fitting the model is to find this equation – to find the values of m and b such that y=mx+b describes a line that fits our observed data well.
+predictions = logmodel.predict(x_test)
+from sklearn.metrics import confusion_matrix
+accuracy = confusion_matrix(y_test,predictions)
+print('Confusion Matrix')
+for i in accuracy:
+    print(i)
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test,predictions)
+print('Accuracy Score',accuracy)
 
 
 
-
-plt.show()
+# plt.show()

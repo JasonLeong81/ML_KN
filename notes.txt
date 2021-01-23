@@ -44,11 +44,9 @@ Video 13:
 
 Video 14: How to become good in exploratory data analysis (EDA)
 
-
 Video 15: EDA of Titanic dataset
 nominal -> not ordered
 ordinal -> ordered
-
 
 Video 16: 
 
@@ -137,7 +135,30 @@ Video 43:
 Video 44: 
 
 
-Video 45: 
+Video 45: Performance Metrics for "classification problem" in machine learning
+2 types of classification problem -> class labels (category A and B) and probabilities
+Balanced dataset -> Use Accuracy
+Unbalanced dataset -> Use Recall (aka True positive rate and sensitivity), Precision (aka positive prediction value), and F Beta
+confusion matrix -> is a 2 by 2 matrix (in case of binary classification problem)
+                 ->  [TP                   ,  FP (aka type 1 error)]
+                 ->  [FN (aka type 2 error),  TN]
+                 -> Top (actual values), Side (predicted values)
+                 ->
+Type 1 error = FP/(FP+TN)
+Type 2 error = FP/(TP+FN)
+Accuracy = (TP + TN) / (TP + FP + FN + TN)
+Recall = TP/ (TP+FN) # of all positive actual values, how many values did we correctly predict positively
+       = use when FN is more important (ie whether stock market is gonna crash or not)
+Precision = TP/ (TP + FP) # of all positive predicted values, how many were actually positive
+          = use when FP is more important (spam detection)
+F Beta = (1+beta**2) * ( (Precision*Recall) / (beta**2)*(Precision+Recall) )
+       = use when FP and FN both are very important
+       = when beta is 1, we call it F1 score. Select beta = 1 when FN and FP have same importance
+       = Reduce beta value when type 1 error is more important than type 2 error
+       = Increase beta value (greater than 1) when type 2 error is more important than type 1 error
+       = beta values ranges from 2-10 when FN > FP and 0-1 when FP > FN in terms of their importance
+
+
 
 
 Video 46: 
@@ -176,8 +197,12 @@ Video 56:
 Video 57: 
 
 
-Video 58: 
-
+Video 58: Performance Metrics for classification problem in ML - Part 2
+ROC (receiver operating characteristic curve)
+AUC (Area under the ROC curve)
+# plot a graph with TPR on y-axis and FPR on x-axis, points are dependent on initial thresholds that we specify
+# Draw a line from origin to right-most point
+# Choose the most suitable threshold from graph
 
 Video 59: 
 
