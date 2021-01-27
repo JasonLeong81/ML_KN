@@ -21,7 +21,7 @@
   <component name="ProjectId" id="1nEoZ1AMk8DnCqJiJIJUgDA2NDG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Video_16_to_28" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Badminton" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.One">
+  <component name="RunManager" selected="Python.test">
     <configuration name="EDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML_KN" />
       <option name="INTERPRETER_OPTIONS" value="" />

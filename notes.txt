@@ -88,7 +88,7 @@ Video 28:
 
 
 Video 29: Univariate, Bivariate, and Multivariate - Part 1 (EDA)
-
+Stopped Here
 
 
 Video 30: 
